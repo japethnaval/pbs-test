@@ -19,6 +19,8 @@
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
     "react-toastify": "^11.0.3",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
     "zod": "^3.24.1"
   },
   "devDependencies": {

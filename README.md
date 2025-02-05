@@ -1,17 +1,9 @@
-This is a simple test and there are two separated apps in this repository. 1. express-app where the referral api resides. 2. the referral-app where the frontend of the referral builder is being served.
+This is a simple test.
+
+The referral-app where the frontend of the referral builder is being served.
 
 ## Getting Started
-
-First, run the development server of express-app:
-the server is expected to run at port 3232
-
-cd express-app then
-
-```bash
-yarn dev
-```
-
-Second, run the development server of referral-app:
+First, run the development server of referral-app:
 
 cd referral-app then
 
@@ -20,7 +12,7 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the referral-app development server.
-The database used was sqlite3 which only persist the data via memory. The data is expected to vanish everytime the express server is restarted.
+The database used was sqlite3 which only persist the data via file that is located within the directory itself. @lib/database.db
 
 ## Task Requirements
 
