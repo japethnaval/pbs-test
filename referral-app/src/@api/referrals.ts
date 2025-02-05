@@ -2,7 +2,7 @@ import { CreateReferralFormData } from "@/app/components/referral-fields/create-
 
 export const fetchReferrals = async () => {
   try {
-    const response = await fetch(process.env.NEXT_PUBLIC_REFERRALS_API!);
+    const response = await fetch('/api/referrals');
 
     if (!response.ok) {
       throw Error("Something went wrong");
@@ -18,7 +18,7 @@ export const fetchReferrals = async () => {
 
 export const createReferral = async (data: CreateReferralFormData) => {
   try {
-    const response = await fetch(process.env.NEXT_PUBLIC_REFERRALS_API!, {
+    const response = await fetch('/api/referrals', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
